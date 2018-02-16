@@ -17,16 +17,14 @@ class DFR_Key
     DFR_Key();
     int getKey();
     void setRate(int);
+    boolean change;
   private:
     int _refreshRate;
     int _keyPin;
     int _threshold;
     int _keyIn;
-    int _curInput;
     int _curKey;
-    int _prevInput;
     int _prevKey;
-    boolean _change;
     unsigned long _oldTime;
 };
 
